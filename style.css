@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* color settings */
+:root {
+  --dark-1: #181818;
+  --dark-2: #474747;
+  --dark-3: #757575;
+  --dark-4: #a3a3a3;
+  --dark-5: #d1d1d1;
+  --dark-6: #e8e8e8;
+  --dark-7: #f3f3f3;
+  --orange: #fd6e0a;
+}
+
+/* Shared Style */
+.btn-primary {
+  background-color: var(--orange);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  padding: 18px 36px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Global Style */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+/* header */
+header {
+  background-image: url(images/developer.png), url(images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-color: #fff8f3;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav > h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 51px;
+}
+nav ul li {
+  font-size: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--dark-2);
+}
+
+/* Hero Section */
+#hero {
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px 0 230px;
+}
+#hero .hero-content {
+  width: 585px;
+}
+#hero .hero-content h4 {
+  font-size: 45px;
+  color: var(--dark-2);
+  margin-bottom: 5px;
+}
+#hero .hero-content h1 {
+  font-size: 85px;
+  font-weight: bold;
+  color: var(--dark-1);
+}
+#hero .hero-content p {
+  font-size: 18px;
+  color: var(--dark-3);
+}
+#hero img {
+  width: 585px;
+}
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+#about {
+  background-color: #fff8f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1140px;
+  height: 550px;
+  margin: 130px 0px;
+}
+#about .inner-box {
+  text-align: center;
+  width: 825px;
+  background-color: white;
+  border: 1px solid black;
+}
+#about .inner-box h2 {
+  font-size: 35px;
+  color: var(--dark-1);
+  font-weight: bold;
+}
+#about .inner-box p {
+  font-size: 18px;
+  color: var(--dark-3);
+}
+#about .about-items {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#about .inner-box .about-items p {
+  font-size: 20px;
+}
+
+/* skills */
+#skills {
+  margin-bottom: 130px;
+}
+#skills > h2 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--dark-1);
+  font-weight: bold;
+}
+#skills > p {
+  text-align: center;
+  font-size: 18px;
+  color: var(--dark-3);
+}
+.skill-items {
+  display: flex;
+  gap: 24px;
+}
+.skill-item {
+  width: 265px;
+  box-shadow: 0 6px 50px 0 #0000000f;
+  border-radius: 5px;
+  padding: 40px;
+}
+.skill-item h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.skill-item p {
+  font-size: 16px;
+  color: var(--dark-3);
+  line-height: 28px;
+}
+
+/* Experience */
+#experience {
+  margin-bottom: 110px;
+}
+#experience > h2 {
+  font-size: 35px;
+  color: var(--dark-1);
+  font-weight: bold;
+  text-align: center;
+}
+
+#experience > .all-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 110px;
+}
+#experience .item h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--dark-2);
+}
+#experience .item {
+  width: 510px;
+}
+#experience .item h4 {
+  font-size: 25px;
+  color: var(--dark-2);
+  font-weight: bold;
+}
+#experience .item h5 {
+  font-size: 20px;
+  color: var(--dark-3);
+  font-weight: semi-bold;
+}
+#experience .item p {
+  font-size: 16px;
+  color: var(--dark-3);
+  line-height: 28px;
+}
+#experience > button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #fff8f3;
+  display: flex;
+  justify-content: center;
+  gap: 115px;
+  padding: 130px 230px;
+}
+footer .contact-info {
+    width: 560px;
+}
+footer h2 {
+  font-size: 35px;
+  color: var(--dark-1);
+  font-weight: bold;
+}
+footer .contact-info p {
+  font-size: 16px;
+  color: var(--dark-2);
+}
+footer .social-icons {
+  display: flex;
+  gap: 30px;
+}
+footer .contact-form {
+  width: 460px;
+  display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+footer .contact-form input[type="text"],
+footer .contact-form input[type="email"],
+footer .contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 18px 30px;
+}

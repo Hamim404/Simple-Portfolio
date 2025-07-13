@@ -24,6 +24,11 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.outline {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background: none;
+}
 
 .bold {
   font-weight: bold;
